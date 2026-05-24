@@ -1,0 +1,11 @@
+name: GenoDiplo
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.10
+  - snakemake
+  - nanoplot
+  - minimap2
+  - samtools

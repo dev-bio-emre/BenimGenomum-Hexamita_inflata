@@ -1,0 +1,30 @@
+# ==============================================================================
+# Ana Snakefile - Hexamita inflata WGS Montajı İçin Optimize Edildi
+# ==============================================================================
+
+include: "rules/1_assembly.smk"
+include: "rules/2_annotation.smk"
+
+rule all:
+    input:
+         # 1. Ön İşleme (Preprocessing)
+         "results/Genomics/1_Assembly/1_Preprocessing/fastqc_before_trimming",
+         
+         # 2. Genom Montajı (Flye Assembler) - (.fasta eklendi)
+         expand("results/Genomics/1_Assembly/2_Assemblers/flye/{process}/assembly.fasta",
+                process=["raw"]),
+         
+         # 3. Haritalama ve Kapsama Analizi (Winnowmap)
+         expand("results/Genomics/1_Assembly/3_Evaluation/winnowmap/{assembler}/merlyDB",
+                assembler=["flye/raw"]),
+         expand("results/Genomics/1_Assembly/3_Evaluation/winnowmap/{assembler}/repetitive_k15.txt",
+                assembler=["flye/raw"]),
+         expand("results/Genomics/1_Assembly/3_Evaluation/winnowmap/{assembler}/{long_reads}.bam",
+                assembler=["flye/raw"],
+                long_reads=["nanopore"]),
+         
+         # 4. Kalite Kontrol ve Raporlama (Quast & MultiQC)
+         expand("results/Genomics/1_Assembly/3_Evaluation/quast/{assembler}/",
+                assembler=["flye/raw"]),
+         expand("results/Genomics/1_Assembly/3_Evaluation/multiqc/{assembler}",
+                assembler=["flye/raw"])

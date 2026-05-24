@@ -1,0 +1,7 @@
+samples:
+  hexamita_inflata:
+    reads: "/home/emree/ham_veri/ERR11414357.fastq"
+
+genome_size: "142m"
+min_read_length: 1000
+threads: 4

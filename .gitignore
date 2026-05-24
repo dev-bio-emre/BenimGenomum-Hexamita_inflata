@@ -1,0 +1,10 @@
+
+*.fastq
+*.fastq.gz
+*.fasta
+*.fna
+*.bam
+*.sam
+/results/
+/quast_cikti/
+.snakemake/
