@@ -1,0 +1,10 @@
+Contig_ID,Length_bp,Coverage,BLAST_Top_Hit,Percent_Identity,E_value
+contig_1056,5633,1016x,S. maltophilia LC734,99.01,6e-149
+contig_2780,463709,556x,S. maltophilia 454,99.34,5e-150
+contig_2816,291634,502x,S. maltophilia FDAARGOS_325,99.01,6e-149
+contig_2793,253975,338x,S. maltophilia FDAARGOS_325,99.01,6e-149
+contig_1057,441342,334x,S. maltophilia 15-STEN-3,98.68,3e-147
+contig_805,1548893,294x,Stenotrophomonas sp. Q16,98.34,5e-145
+contig_2794,1624735,293x,S. maltophilia O1,99.34,5e-150
+contig_804,221654,278x,S. maltophilia WP1-W18-CRE-01,98.68,3e-147
+contig_1059,12398,124x,S. lactitubi R-90894,94.68,4e-126

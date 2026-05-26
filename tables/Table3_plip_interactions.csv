@@ -1,0 +1,7 @@
+Interaction_Type,Residue,Distance_A,Details
+Hydrophobic,PHE56,3.47,Carbon-carbon contact
+Hydrophobic,TYR137,3.47,Carbon-carbon contact
+Hydrophobic,PHE144,3.61,Carbon-carbon contact
+Hydrogen_Bond,ASP126,4.08,Sidechain; angle 140.94
+Pi-Stacking_T-shaped,PHE56,5.11,Angle 61.13
+Pi-Stacking_Parallel,TYR137,4.28,Angle 14.93
