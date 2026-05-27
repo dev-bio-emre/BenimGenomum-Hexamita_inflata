@@ -1,5 +1,7 @@
 # Hexamita inflata Drug Discovery Pipeline 🧬💊
 
+> 🇬🇧 [Read in English](README_EN.md)
+
 *From Oxford Nanopore Sequencing to Computational Drug Target Identification*
 
 Diplomonad paraziti **Hexamita inflata**'nın ham sekans verisinden ilaç adayı moleküle uzanan tam bir biyoinformatik pipeline'ı. De novo genom montajı, dekontaminasyon, fonksiyonel annotation, AlphaFold yapı tahmini ve moleküler docking adımlarını içerir.
